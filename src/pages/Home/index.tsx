@@ -10,6 +10,7 @@ import { VitrineNews } from "../../components/VitrineNews";
 import { useContext } from "react";
 import { ProductsContext } from "../../contexts/Products";
 import { ImageSlider, ImageSliderMobile } from "../../components/Slider";
+import { dataBanners } from "../../components/Slider/dataBanners";
 
 export const Home = () => {
   const { products } = useContext(ProductsContext);
@@ -21,7 +22,9 @@ export const Home = () => {
       <VStack spacing={120}>
         <Header />
         <MenuCategories />
-        <Image src={""} alt="bannerdestaque" />
+
+        <ImageSlider slides={dataBanners} />
+
         <BannerCategories />
         <VitrineNews />
         <VitrineDestaques />

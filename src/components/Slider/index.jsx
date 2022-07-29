@@ -11,11 +11,11 @@ export const ImageSlider = ({ slides }) => {
       showIndicators={false}
       showStatus={false}
       stopOnHover={false}
-      width={"100vw"}
+      width={"99.2vw"}
       animationHandler={"fade"}
     >
       {slides.map((slide) => {
-        return <Image src={slide.image} height="1100px" width="200px" />;
+        return <Image src={slide.image} height="680px" width="200px" />;
       })}
     </Carousel>
   );
