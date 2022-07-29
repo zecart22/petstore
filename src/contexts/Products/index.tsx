@@ -2,7 +2,12 @@ import { createContext, ReactNode } from "react";
 import { ProductsData } from "./products";
 
 interface Products {
+  price: number;
+  isNew: boolean;
+  descount: string;
+  name: string;
   image: string;
+  selected: boolean;
 }
 
 interface ProductsProviderProps {
