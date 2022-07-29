@@ -15,15 +15,23 @@ import { dataBanners } from "../../components/Slider/dataBanners";
 export const Home = () => {
   const { products } = useContext(ProductsContext);
 
-  const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
+  const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
 
   return (
     <Box>
       <VStack spacing={120}>
         <Header />
         <MenuCategories />
-
-        <ImageSlider slides={dataBanners} />
+        {isLargerThan1280 ? (
+          <>
+            <ImageSlider slides={dataBanners} />
+          </>
+        ) : (
+          <VStack>
+            <Box h={10} />
+            <ImageSliderMobile slides={dataBanners} />
+          </VStack>
+        )}
 
         <BannerCategories />
         <VitrineNews />

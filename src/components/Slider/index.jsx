@@ -35,7 +35,7 @@ export const ImageSliderMobile = ({ slides }) => {
       showIndicators={false}
     >
       {slides.map((slide) => {
-        return <Image src={slide.image} height="320px" />;
+        return <Image src={slide.image} height="150px" />;
       })}
     </Carousel>
   );
