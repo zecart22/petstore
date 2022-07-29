@@ -29,7 +29,7 @@ export const Home = () => {
 
   return (
     <Box>
-      <VStack spacing={120}>
+      <VStack>
         <Header />
         <MenuCategories />
         {isLargerThan1280 ? (
@@ -71,7 +71,6 @@ export const Home = () => {
 
       <VitrineDestaques />
       <NewsLetter />
-      <Footer />
     </Box>
   );
 };

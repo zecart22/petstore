@@ -18,7 +18,7 @@ export const Header = () => {
         py="1"
         bg="theme.white"
         boxShadow="0px 1px 4px"
-        position="fixed"
+        position="relative"
         width="100%"
         zIndex="100"
       >
