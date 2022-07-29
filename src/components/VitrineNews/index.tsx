@@ -19,7 +19,7 @@ export const VitrineNews = () => {
       </Heading>
       <Flex justifyContent={"center"}>
         <Flex
-          w="99.2vw"
+          w="50vw"
           bg="primary.main"
           borderRadius="5px"
           flexWrap={"wrap"}

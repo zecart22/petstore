@@ -1,4 +1,11 @@
-import { useMediaQuery, Box, Image, VStack } from "@chakra-ui/react";
+import {
+  useMediaQuery,
+  Box,
+  Image,
+  VStack,
+  HStack,
+  Flex,
+} from "@chakra-ui/react";
 
 import { Header } from "../../Header";
 import { Footer } from "../../components/Footer";
@@ -11,11 +18,14 @@ import { useContext } from "react";
 import { ProductsContext } from "../../contexts/Products";
 import { ImageSlider, ImageSliderMobile } from "../../components/Slider";
 import { dataBanners } from "../../components/Slider/dataBanners";
+import bannerDog from "../../assets/img/bannerDog.png";
+import bannerCat from "../../assets/img/bannerCat.png";
 
 export const Home = () => {
   const { products } = useContext(ProductsContext);
 
   const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
+  const [isLargerThan750] = useMediaQuery("(min-width: 750px)");
 
   return (
     <Box>
@@ -35,6 +45,30 @@ export const Home = () => {
       </VStack>
       <BannerCategories />
       <VitrineNews />
+      {isLargerThan750 ? (
+        <>
+          <Flex
+            justifyContent={"center"}
+            flexDirection={"row"}
+            flexWrap={"wrap"}
+          >
+            <Image src={bannerCat} ml={10} mt={10} />
+            <Image src={bannerDog} ml={10} mt={10} />
+          </Flex>
+        </>
+      ) : (
+        <>
+          <Flex
+            justifyContent={"center"}
+            flexDirection={"row"}
+            flexWrap={"wrap"}
+          >
+            <Image src={bannerCat} ml={10} mt={10} w="250px" h="100px" />
+            <Image src={bannerDog} ml={10} mt={10} w="250px" h="100px" />
+          </Flex>
+        </>
+      )}
+
       <VitrineDestaques />
       <NewsLetter />
       <Footer />

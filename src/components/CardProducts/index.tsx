@@ -79,7 +79,7 @@ export const CardProducts = ({
             )}
 
             <Box
-              width="300px"
+              width="250px"
               h="325px"
               marginBottom={6}
               align-items="center"
