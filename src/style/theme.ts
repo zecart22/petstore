@@ -5,7 +5,7 @@ const theme = extendTheme({
     theme: {
       white: "#FFFF",
       black: "#0A0404",
-      gray: "#464646",
+      gray: "#E8E2E2",
       yellow: "#FFA200",
       purple: "#8158C5",
     },
@@ -15,7 +15,7 @@ const theme = extendTheme({
     global: {
       body: {
         bg: "theme.white",
-        color: "theme.gray",
+        color: "gray",
       },
     },
   },

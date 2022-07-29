@@ -1,4 +1,4 @@
-import { useMediaQuery, Flex, Image } from "@chakra-ui/react";
+import { useMediaQuery, Box, Image, VStack } from "@chakra-ui/react";
 
 import { Header } from "../../Header";
 import { Footer } from "../../components/Footer";
@@ -17,15 +17,17 @@ export const Home = () => {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <Flex flexDirection={"column"}>
-      <Header />
-      <MenuCategories />
-      <Image src={""} alt="bannerdestaque" />
-      <BannerCategories />
-      <VitrineNews />
-      <VitrineDestaques />
-      <NewsLetter />
-      <Footer />
-    </Flex>
+    <Box>
+      <VStack spacing={120}>
+        <Header />
+        <MenuCategories />
+        <Image src={""} alt="bannerdestaque" />
+        <BannerCategories />
+        <VitrineNews />
+        <VitrineDestaques />
+        <NewsLetter />
+        <Footer />
+      </VStack>
+    </Box>
   );
 };
