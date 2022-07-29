@@ -32,13 +32,12 @@ export const Home = () => {
             <ImageSliderMobile slides={dataBanners} />
           </VStack>
         )}
-
-        <BannerCategories />
-        <VitrineNews />
-        <VitrineDestaques />
-        <NewsLetter />
-        <Footer />
       </VStack>
+      <BannerCategories />
+      <VitrineNews />
+      <VitrineDestaques />
+      <NewsLetter />
+      <Footer />
     </Box>
   );
 };

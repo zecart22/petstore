@@ -7,7 +7,7 @@ export const ImageSlider = ({ slides }) => {
     <Carousel
       autoPlay
       infiniteLoop
-      interval={6000}
+      interval={8000}
       showIndicators={false}
       showStatus={false}
       stopOnHover={false}
@@ -35,7 +35,7 @@ export const ImageSliderMobile = ({ slides }) => {
       showIndicators={false}
     >
       {slides.map((slide) => {
-        return <Image src={slide.image} height="150px" />;
+        return <Image src={slide.image} height="200px" />;
       })}
     </Carousel>
   );
