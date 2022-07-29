@@ -1,0 +1,31 @@
+import { useMediaQuery, Flex, Image } from "@chakra-ui/react";
+
+import { Header } from "../../Header";
+import { Footer } from "../../components/Footer";
+import { BannerCategories } from "../../components/BannerCategories";
+import { MenuCategories } from "../../components/MenuCategories";
+import { NewsLetter } from "../../components/NewsLetter";
+import { VitrineDestaques } from "../../components/VitrineDestaques";
+import { VitrineNews } from "../../components/VitrineNews";
+import { useContext } from "react";
+import { ProductsContext } from "../../contexts/Products";
+import { ImageSlider, ImageSliderMobile } from "../../components/Slider";
+
+export const Home = () => {
+  const { products } = useContext(ProductsContext);
+
+  const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
+
+  return (
+    <Flex flexDirection={"column"}>
+      <Header />
+      <MenuCategories />
+      <Image src={""} alt="bannerdestaque" />
+      <BannerCategories />
+      <VitrineNews />
+      <VitrineDestaques />
+      <NewsLetter />
+      <Footer />
+    </Flex>
+  );
+};
