@@ -1,8 +1,8 @@
-<h1>Clone Ocean - Creathus/Test Front-End</h1>
+<h1>Pet Store</h1>
 
 <h2> Objetivo:</h2>
 
-<p>O objetivo desse projeto é construir uma pagina Web de uma mostre home de uma loja Pet Shop </p>
+<p>O objetivo desse projeto é construir uma pagina Web de uma loja Pet Shop </p>
 
 
 
