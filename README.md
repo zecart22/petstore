@@ -2,7 +2,7 @@
 
 <h2> Objetivo:</h2>
 
-<p>O objetivo desse projeto é construir uma pagina Web de uma loja Pet Shop </p>
+<p>O objetivo desse projeto é construir uma pagina Web de uma  Pet Shop </p>
 
 
 
