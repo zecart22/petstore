@@ -4,9 +4,11 @@
 
 <p>O objetivo desse projeto é construir uma pagina Web de uma mostre home de uma loja Pet Shop </p>
 
-<img src="https://dochub.com/gustavopupo/orO7lgeVL0JY3e3VjMP2p5/teste-seri-e-design-layout-png" alt="capa_desktop"/>
 
-<a href="https://ocean-psi.vercel.app/" title="deploy">Deploy da aplicação</a></br>
+
+<a href="https://ibb.co/LrG3QsQ"><img src="https://i.ibb.co/gdnxvcv/Teste-Seri-e-Design-Layout.png" alt="Teste-Seri-e-Design-Layout" border="0"></a>
+
+<a href="https://pest-store.vercel.app/" title="deploy">Deploy da aplicação</a></br>
 
 
 
