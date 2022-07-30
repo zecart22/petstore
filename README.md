@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+<h1>Clone Ocean - Creathus/Test Front-End</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2> Objetivo:</h2>
 
-## Available Scripts
+<p>O objetivo desse projeto é construir uma pagina Web de uma mostre home de uma loja Pet Shop </p>
 
-In the project directory, you can run:
+<img src="https://dochub.com/gustavopupo/orO7lgeVL0JY3e3VjMP2p5/teste-seri-e-design-layout-png" alt="capa_desktop"/>
 
-### `yarn start`
+<a href="https://ocean-psi.vercel.app/" title="deploy">Deploy da aplicação</a></br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+<h4> Clone do repositório </h4>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `https://github.com/zecart22/petstore`
 
-### `yarn build`
+<h4> Instalando dependencias</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `yarn install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h4> Rodando projeto</h4>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `yarn start`
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h4> Tecnologias utilizadas</h4>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `ReactJS`
+- `Javascript`
+- `Typescript`
+- `HTML5`
+- `CSS`
+- `Chakra UI`
+- `Context API`
+- `React Router Dom`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<h4> Por que da Stack ?</h4>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<ul>
+  <li> React foi utilizado por minha familiaridade com a ferramenta</li>
+  <li>Typescript para tipagem que facilita o gerenciamento do projeto aumentando minha performace como desenvolvedor</li>
+  <li>Chakra UI é uma poderosa Lib que utilizo muito para estilização das minhas aplicações, ela me ajuda a ganhar tempo e qualidade no trabalho em relação ao Syled Components ou CSS puro</li>
+  <li>Context API para centralizar e gerenciar todas informações que eu preciso</li>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+</ul>
+
+<h4> Estrutura dos diretórios</h4>
+
+-     src
+      +---------assests
+                +-------img : nesse diretório estão todas as imagens uitlizadas na aplicação.
+                
+      +----------components : nesse diretório estão todos componentes utilizados na palicação.
+      
+      +----------contexts: nesse diretório estão centralizadas todas as variáveis da aplicação.
+      
+      +----------pages: nesse diretório estão todas as páginas da aplicação.
+      
+      +----------routes: nesse direitório estão todas as rotas das páginas da aplicação.
+      
+      +----------services: nesse diretório está localizada o link da API.
+      
+      +----------style: nesse diretório está localizado o Theme que trás todo padrão de estilização da aplicação.
+      
