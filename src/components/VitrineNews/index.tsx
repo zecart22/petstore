@@ -9,7 +9,7 @@ export const VitrineNews = () => {
   return (
     <>
       <Heading
-        color={"theme.gray"}
+        color={"theme.black"}
         fontFamily={"Montserrat"}
         textAlign={"center"}
         mt={5}

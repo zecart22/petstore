@@ -64,20 +64,6 @@ export const CardProducts = ({
           )}
 
           <HStack>
-            {flag ? (
-              <Button
-                bg="theme.yellow"
-                mt={10}
-                fontSize={12}
-                color={"theme.white"}
-                boxShadow={"lg"}
-              >
-                Compra rápida
-              </Button>
-            ) : (
-              ""
-            )}
-
             <Box
               width="250px"
               h="325px"
@@ -100,7 +86,7 @@ export const CardProducts = ({
               <Box
                 w={"83px"}
                 h={"25px"}
-                bg={"theme.yellow"}
+                bg={"theme.purple"}
                 color={"theme.white"}
                 textAlign={"center"}
                 fontWeight={"extrabold"}
@@ -137,6 +123,15 @@ export const CardProducts = ({
                 >
                   R${price.toFixed(2)}
                 </Text>
+                <Button
+                  bg="theme.yellow"
+                  mt={10}
+                  fontSize={12}
+                  color={"theme.white"}
+                  boxShadow={"lg"}
+                >
+                  Compra rápida
+                </Button>
               </VStack>
             </VStack>
           </HStack>
@@ -166,19 +161,6 @@ export const CardProducts = ({
             </>
           )}
           <HStack>
-            {flag ? (
-              <Button
-                bg="theme.yellow"
-                mt={10}
-                fontSize={12}
-                color={"theme.white"}
-                boxShadow={"lg"}
-              >
-                Compra rápida
-              </Button>
-            ) : (
-              ""
-            )}
             <Box
               width="300px"
               h="325px"
@@ -201,7 +183,7 @@ export const CardProducts = ({
               <Box
                 w={"83px"}
                 h={"25px"}
-                bg={"theme.yellow"}
+                bg={"theme.purple"}
                 color={"theme.white"}
                 textAlign={"center"}
                 fontWeight={"extrabold"}
@@ -227,17 +209,28 @@ export const CardProducts = ({
                 >
                   {tittle}
                 </Text>
-                <Text
-                  as="span"
-                  w="400px"
-                  h="70px"
-                  display="inline-block"
-                  white-space="nowrap"
-                  overflow="hidden"
-                  text-overflow="ellipsis"
-                >
-                  R${price.toFixed(2)}
-                </Text>
+                <VStack spacing={5}>
+                  <Button
+                    bg="theme.yellow"
+                    mt={5}
+                    fontSize={12}
+                    color={"theme.white"}
+                    boxShadow={"lg"}
+                  >
+                    Compra rápida
+                  </Button>
+                  <Text
+                    as="span"
+                    w="400px"
+                    h="70px"
+                    display="inline-block"
+                    white-space="nowrap"
+                    overflow="hidden"
+                    text-overflow="ellipsis"
+                  >
+                    R${price.toFixed(2)}
+                  </Text>
+                </VStack>
               </VStack>
             </VStack>
           </HStack>

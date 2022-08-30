@@ -5,7 +5,6 @@ import {
   useMediaQuery,
   Flex,
   Text,
-  theme,
   Input,
   VStack,
   Button,
@@ -14,17 +13,18 @@ import {
 import icon from "../../assets/img/icone.png";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import line from "../../assets/img/line.png";
-import whatsap from "../../assets/img/wh.png";
-import seta from "../../assets/img/seta.png";
+
 import logo from "../../assets/img/logo.png";
 import pay from "../../assets/img/payments.png";
-import serieLogo from "../../assets/img/serie.png";
+
+import { RiWhatsappFill } from "react-icons/ri";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 export const NewsLetter = () => {
   const [isLargerThan1198] = useMediaQuery("(min-width: 1198px)");
 
   return (
-    <Flex mt={-10} flexDirection={"column"}>
+    <Flex flexDirection={"column"}>
       {isLargerThan1198 ? (
         <>
           <Flex
@@ -124,8 +124,8 @@ export const NewsLetter = () => {
               </HStack>
             </VStack>
             <VStack spacing={5} justifyContent={"flex-end"}>
-              <Image src={seta} w="70px" h="35px" />
-              <Image src={whatsap} w="70px" h="35px" />
+              <FaArrowAltCircleUp size={60} color={"#FFF"} />
+              <RiWhatsappFill size={70} color={"#FFF"} />
             </VStack>
           </Flex>
         </>
@@ -229,8 +229,8 @@ export const NewsLetter = () => {
             </VStack>
           </VStack>
           <VStack spacing={5} justifyContent={"flex-end"}>
-            <Image src={seta} w="70px" h="25px" />
-            <Image src={whatsap} w="70px" h="25px" />
+            <FaArrowAltCircleUp size={40} color={"#FFF"} />
+            <RiWhatsappFill size={50} color={"#FFF"} />
           </VStack>
         </Flex>
       )}
@@ -348,7 +348,7 @@ export const NewsLetter = () => {
 
       <HStack justifyContent={"center"} mt="5px">
         <Text color={"gray"}>{"Tecnologia e Desenvolvimento"}</Text>
-        <Image src={serieLogo} w="57px" h="23px" />
+        <Text color={"gray"}>{"Robert Pupo Developer"}</Text>
       </HStack>
     </Flex>
   );

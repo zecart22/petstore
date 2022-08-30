@@ -15,7 +15,7 @@ export const ImageSlider = ({ slides }) => {
       animationHandler={"fade"}
     >
       {slides.map((slide) => {
-        return <Image src={slide.image} height="680px" width="200px" />;
+        return <Image src={slide.image} height="600px" width="200px" />;
       })}
     </Carousel>
   );
